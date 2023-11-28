@@ -18,7 +18,11 @@ const everydayPack = new Backpack(
   "../assets/images/everyday.svg"
 );
 
-const main = document.querySelector(".maincontent");
+const main = document.querySelector(".maincontent").attributes;
+document.querySelector(".maincontent").hasAttribute("src");
+document.querySelector(".maincontent").setAttribute("src", "./image");
+document.querySelector(".maincontent").getAttribute("src");
+document.querySelector(".maincontent").removeAttribute("src");
 
 const content = `
   <article class="backpack" id="everyday">

@@ -20,3 +20,5 @@ const backpack = {
     this.strapLength.right = lengthRight;
   },
 };
+
+console.log("backpack's color is:", backpack.color);

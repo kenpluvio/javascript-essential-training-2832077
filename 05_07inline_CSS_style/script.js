@@ -19,6 +19,9 @@ const everydayPack = new Backpack(
 );
 
 const main = document.querySelector(".maincontent");
+document.querySelector(".maincontent").computedStyleMap.color = "red";
+document.querySelector("h1").style.backgroundColor = "blue";
+document.querySelector("h1").style.cssText;
 
 const content = `
   <article class="backpack" id="everyday">

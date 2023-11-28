@@ -30,6 +30,7 @@ function Backpack(
   };
 }
 
+export default Backpack;
 const everydayPack = new Backpack(
   "Everyday Backpack",
   30,
