@@ -18,10 +18,10 @@ const doMoreMath = function (a = 3, b = 2) {
 console.log("Do some math:", doSomeMath(5, 6));
 console.log("Do more math:", doMoreMath(5, 6));
 
-// Immediately Invoked Function Expression (IIFE)
-// (function () {
-//   let a = 4;
-//   let b = 6;
-//   let c = doSomeMath(a, b);
-//   console.log(`The sum of a and b is: ${c}`);
-// })();
+//Immediately Invoked Function Expression (IIFE)
+(function () {
+  let a = 4;
+  let b = 6;
+  let c = doSomeMath(a, b);
+  console.log(`The sum of a and b is: ${c}`);
+})();

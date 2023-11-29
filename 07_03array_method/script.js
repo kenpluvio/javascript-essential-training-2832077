@@ -4,7 +4,16 @@
  */
 
 let backpackContents = ["piggy", "headlamp", "pen"];
-
+//concatanate
+backpackContents.join(" | ");
+//add new items at the end
+backpackContents.push("shift", 5);
+//add new items at the beginning
+backpackContents.unshift("shift", 5);
+//remove beginning itmes
+backpackContents.shift();
+//remove last item
+backpackContents.pop();
 console.log(backpackContents);
 
 // backpackContents.forEach(function (item) {

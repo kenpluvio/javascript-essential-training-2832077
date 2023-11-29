@@ -54,3 +54,9 @@ newArticle.setAttribute("id", "everyday");
 newArticle.innerHTML = content;
 
 main.append(newArticle);
+
+if (everydayPack.lidOpen === true) {
+  console.log("Lid is open");
+} else {
+  console.log("Lid is closed");
+}

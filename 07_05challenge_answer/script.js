@@ -31,17 +31,28 @@ console.log("Original array:", deskArray);
 
 // Sort items by alphabetical order:
 // @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-// deskArray.sort();
-// console.log("Sorted array:", deskArray);
+deskArray.sort();
+console.log("Sorted array:", deskArray);
 
 // Find "notebook":
 // @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
-// const foundItem = deskArray.find((item) => item === "notebook");
-// console.log("Found item:", foundItem);
+const foundItem = deskArray.find((item) => item === "notebook");
+console.log("Found item:", foundItem);
 
 // Find and remove an item:
 // @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
 // @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
-// let remove = "notebook";
-// deskArray.splice(deskArray.indexOf(remove), 1);
-// console.log(`Array with "${remove}" removed:`, deskArray);
+let remove = "notebook";
+deskArray.splice(deskArray.indexOf(remove), 1);
+console.log(`Array with "${remove}" removed:`, deskArray);
+
+//final answer
+newDeskArr.pop();
+newDeskArr.sort();
+LastItem = newDeskArr.pop();
+newDeskArr.unshift(LastItem);
+let USBIndex = newDeskArr.indexOf("USB drive");
+newDeskArr.push(newDeskArr[USBIndex]);
+newDeskArr.splice(USBIndex, 1);
+let LAPIndex = newDeskArr.indexOf("laptop");
+newDeskArr.splice(LAPIndex, 1);

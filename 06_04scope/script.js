@@ -12,6 +12,7 @@ color = "skyblue";
 
 function headingColor() {
   color = "blue";
+  //let color = "black";
   document.querySelector(".title").style.color = color;
 }
 
