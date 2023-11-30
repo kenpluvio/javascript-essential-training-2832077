@@ -136,3 +136,36 @@ const main = document.querySelector(".maincontent");
 backpackList.forEach((backpack) => {
   main.append(backpack);
 });
+
+// JavaScript code​​​​​​‌​‌​‌​​​​​​​‌​​‌​​‌​‌​​‌​ below
+// Change these values to control whether you see
+// the expected answer and/or hints.
+const showExpectedResult = false;
+const showHints = false;
+
+function updatePage(document) {
+  // Your code goes here.
+  const thespan = document.querySelectorAll(".value");
+  function updateSpan(form) {
+    switch (form.id) {
+      case "update-name":
+        thespan[0].innerHTML = document.querySelector("#name-input").value;
+        break;
+      case "update-description":
+        thespan[1].innerHTML = document.querySelector(
+          "#description-input"
+        ).value;
+        break;
+      case "update-color":
+        thespan[2].innerHTML = document.querySelector("#color-input").value;
+        break;
+      case "update-volume":
+        thespan[3].innerHTML = document.querySelector("#volume-input").value;
+        break;
+    }
+  }
+  const inputdiv = document.querySelectorAll("form");
+  inputdiv.forEach((forms) => {
+    forms.addEventListener("submit", () => updateSpan(forms), false);
+  });
+}
